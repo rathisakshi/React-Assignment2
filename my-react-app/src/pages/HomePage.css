@@ -1,0 +1,19 @@
+.banner2{
+    height: 500px;
+    width: 1277px;
+    margin-top: 3px;
+    object-fit: cover;
+}
+.breakfast{
+    width:100%;
+}
+.breakfast-child {
+    display: flex;
+    width:100%;
+
+}
+.breakfast-child  img{
+    width: 307px;
+    margin: 58px;
+}
+

@@ -1,0 +1,72 @@
+[
+  {
+    "id": "1",
+    "name": "Bournvita",
+    "description": "Cadbury Bournvita is a nutrition brand with a 75-year legacy in India. ",
+    "price": 799 ,
+    "image": "images/bournvita.jpg"
+
+  },
+
+  {
+    "id": "2",
+    "name": "Cashews",
+    "description": "Happilo Whole Cashew Nuts are 100% vegetarian and are richer in certain nutrients and have many health benefits",
+    "price": 199,
+    "image": "images/cashew.jpg"
+
+  },
+
+  {
+    "id": "3",
+    "name": "Fortune oil",
+    "description": "Made from Cold Pressed (Kachi Ghani) Technology using Finest Mustard Seeds - Rich in Omega 3 & 6 that boost Immunity ",
+    "price": 300,
+    "image": "images/fortune oil.jpg"
+
+  },
+  {
+    "id": "4",
+    "name": "Honey",
+    "description": "Pure honey - no added sugar, no added c3/ C4 percent/rice/ corn/ cane sugar ",
+    "price": 49.99,
+    "image": "images/honey.jpg"
+
+  },
+
+  {
+    "id": "5",
+    "name": "Kurkure",
+    "description": " Kurkure is the perfect savory snack to have at tea time. ",
+    "price": 16,
+    "image": "images/kurkure.jpg"
+
+  },
+
+  {
+    "id": "6",
+    "name": "Maggi",
+    "description": "MAGGI 2-Minute Masala Noodles is an instant noodles brand manufactured by Nestle ",
+    "price": 70,
+    "image": "images/maggi.jpg"
+
+  },
+
+  {
+    "id": "7",
+    "name": " Tata Tea",
+    "description": "Desh ki Chai: Tata Tea Premium has a unique taste that chai lovers across India will enjoy ",
+    "price": 299,
+    "image": "images/tea.jpg"
+
+  },
+
+  {
+    "id": "8",
+    "name": "Tata Salt",
+    "description": "40 YEARS OF TRUST: Known as ‘Desk ka Namak’, Tata Salt offers a promise of Iodine guarantee ",
+    "price": 20,
+    "image": "images/salt.jpg"
+
+  }
+]

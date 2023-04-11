@@ -1,0 +1,73 @@
+/*.form-contain label{*/
+
+/*    width: 500px;*/
+/*    margin-top:4%;*/
+
+/*}*/
+/*.form-contain{*/
+/*    width: 40%;*/
+/*    margin: 27% 0% 0% 0% ;*/
+/*}*/
+/*.form-contain button{*/
+/*    font-size: large;*/
+/*    width: 148px;*/
+/*    background-color: darkgreen;*/
+/*    color: #cccccc;*/
+/*    margin: 8% 0% 0% 34%;*/
+/*    padding: 2% 2% 2% 2%;*/
+/*}*/
+
+/*.form-contain button:hover {*/
+/*    transform: scale(1.1);*/
+/*    transition-duration: 0.4s;*/
+
+/*}*/
+
+/*.form-contain fieldset{*/
+/*    box-shadow: aliceblue;*/
+/*    border-style: groove;*/
+/*    border-radius: 10px;*/
+/*}*/
+.form-contain label{
+    display: block;
+    width: 100px;
+    margin-top: 5%;
+    font-size: large;
+
+}
+
+.form-contain{
+    width: 30%;
+    /*text-align: center;*/
+    font-size: large;
+    margin: 2% 0% 0% 40% ;
+}
+.form-contain button{
+    padding: 4%;
+    margin: 5% 0% 0% 15%;
+    font-size: large;
+    width: 160px;
+    background-color: #282828;
+    color: #cccccc;
+
+}
+
+.form-contain button:hover {
+    transform: scale(1.1);
+    transition-duration: 0.4s;
+
+}
+
+.form-contain fieldset{
+    box-shadow: gray;
+    border-style: groove;
+    border-radius: 10px;
+}
+.form-contain .formheading{
+    text-align: center;
+}
+.ip-style{
+    width:317px;
+    background-color: #dddddd;
+    padding:6%;
+}
