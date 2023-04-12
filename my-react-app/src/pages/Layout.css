@@ -1,11 +1,15 @@
+body{
+    width:100%;
+    margin:0%;
+}
 nav {
     background-color: black;
-    padding: 20px 30px;
+    padding: 0px 14px;
     display: flex;
     justify-content: flex-end;
 }
 
-ul {
+.list {
     list-style: none;
     display: flex;
     align-items: center;
@@ -13,20 +17,20 @@ ul {
     margin-top: 50px;
 }
 
-li:not(:last-child) {
+.l2:not(:last-child) {
     margin-right: 20px;
 }
 
-a {
+.a2 {
     text-decoration: none;
     color: #fff;
-    font-weight: bold;
     font-size: 18px;
     padding: 6px 10px;
 }
 
-a:hover {
-    color: #f8f9fa;
+.a2:hover {
+    background-color:white ;
+    color: black;
 }
 .a1{
     width: 900px;
@@ -38,6 +42,42 @@ a:hover {
     margin-left:50px;
 }
 .logo{
+    margin: 1% 0% 0% 0%;
+    width: 30%;
+}
+.row{
+    display: flex;
+}
+.col-1{
+    width:35%;
+    color: white;
+    margin:0% 0% 0% 8%;
+
+}
+.col-2{
+    margin:0% 0% 0% 4%;
+}
+footer{
+    background-color: black;
+}
+.col-2-heading
+{
+color:white;
+    margin-left: 50px;
+
+}
+.col-3{
+    color:white;
+    margin:0% 0% 0% 18%;
+
+}
+.links-child{
     margin:0% 0% 0% 0%;
-    width:25%;
+    font-weight: lighter;
+}
+.a3 {
+    text-decoration: none;
+    color: #fff;
+    padding:20px;
+
 }

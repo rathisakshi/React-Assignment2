@@ -1,6 +1,7 @@
 import React from 'react';
 import './HomePage.css';
 
+
 const Home = () => {
     return (
         <div className="home">
@@ -8,8 +9,8 @@ const Home = () => {
                 <img className="banner2" src="images/banner.jpg" alt="image" />
 
             </div>
-            <h2>--------------Buy your Favourites ----------</h2>
-            <div >
+          <h1 class="header">Shop By Category</h1>
+            <div className="top">
                 <img src="images/breakfast_pc.jpg" alt="image" className="breakfast" />
             </div>
             <div className="breakfast-child">

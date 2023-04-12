@@ -37,10 +37,10 @@
 }
 
 .form-contain{
-    width: 30%;
-    /*text-align: center;*/
+    width: 23%;
     font-size: large;
-    margin: 2% 0% 0% 40% ;
+  margin-left: 12%;
+    position: absolute;
 }
 .form-contain button{
     padding: 4%;
@@ -58,16 +58,18 @@
 
 }
 
-.form-contain fieldset{
-    box-shadow: gray;
-    border-style: groove;
-    border-radius: 10px;
-}
-.form-contain .formheading{
-    text-align: center;
-}
+/*.form-contain .formheading{*/
+/*    text-align: center;*/
+/*}*/
 .ip-style{
     width:317px;
     background-color: #dddddd;
     padding:6%;
+}
+.back-img{
+    width:100%;
+
+}
+.all{
+    position: relative;
 }

@@ -51,9 +51,11 @@ const BillingPage = () => {
     };
 
     return (<body className="billing-page">
+        <div class ="all">
+
         <form onSubmit={handleSubmit} className="form-contain">
             <h2 className="formheading">Billing Address</h2>
-            <fieldset>
+
                 <label>
                     Name:
                     <input type="text" name="name" value={name} onChange={handleInputChange} className="ip-style" required/>
@@ -80,8 +82,11 @@ const BillingPage = () => {
                            minLength={5} className="ip-style" required/>
                 </label>
                 <button type="submit">Submit</button>
-            </fieldset>
+
         </form>
+
+            <img src="images/billing2.jpeg" alt="image" className="back-img"/>
+        </div>
         </body>
 
     );

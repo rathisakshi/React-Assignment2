@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import './CartPage.css'
 
+
+
 function Cart() {
     const [cartItems, setCartItems] = useState([]);
 
@@ -81,7 +83,9 @@ function Cart() {
             ) : (
                 <p>No items in cart.</p>
             )}
+            <button className="checkout-btn">Checkout</button>
         </div>
+
     );
 }
 

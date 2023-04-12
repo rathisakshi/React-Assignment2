@@ -4,7 +4,7 @@ import './AboutUs.css';
 const AboutUs = () => {
     return (
         <div className="about-us-page">
-            <img className="banner" src="images/aboutusbanner.jpg" alt="image" />
+            <img className="banner" src="images/aboutus.png" alt="image" />
 
                 <section>
             <h1>100x retail in 5 years</h1>
