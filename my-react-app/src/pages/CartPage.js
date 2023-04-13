@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 import './CartPage.css'
-
-
-
+import { useNavigate } from "react-router-dom";
 function Cart() {
     const [cartItems, setCartItems] = useState([]);
 
@@ -78,12 +76,17 @@ function Cart() {
                         <td>Total:</td>
                         <td>Rs{total}</td>
                     </tr>
+                    <tr className="checkout">
+                        <td colSpan="2"></td>
+                        <td><button onClick={() => navigate("/CheckoutPage")} > CheckOut</button></td>
+                    </tr>
+
                     </tbody>
                 </table>
             ) : (
                 <p>No items in cart.</p>
             )}
-            <button className="checkout-btn">Checkout</button>
+
         </div>
 
     );

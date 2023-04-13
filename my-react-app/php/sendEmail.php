@@ -24,7 +24,7 @@ if (isset($_POST['fname']) && isset($_POST['email']) && isset($_POST['phone']) &
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
         $mail->Username = 'sakshi.rathi@sigmainfo.net';
-        $mail->Password = 'chotu.rathi@123';
+        $mail->Password = '';
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
 
