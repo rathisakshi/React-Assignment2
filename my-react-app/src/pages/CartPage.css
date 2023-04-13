@@ -4,8 +4,8 @@ table{
     border-collapse: collapse;
 }
 thead{
-    background-color: #282828;
-    color: #cccccc;
+    background-color: lightgreen;
+    color: black;
 }
 th{
     padding: 2%;
@@ -18,8 +18,8 @@ td{
 td button{
     width: 40px;
     margin: 5%;
-    background-color: grey;
-    color: white;
+    background-color: khaki;
+    color: black;
     border-radius: 10px;
 
 }
@@ -29,19 +29,25 @@ td button{
 }
 .total{
 
-    background-color: grey;
-    color: white;
+    background-color: lightgreen;
+    color: black;
     font-weight: bolder;
 
 }
 .checkout-btn{
-    background-color: black;
-    color: white;
-    padding: 12px 24px;
-    text-align: center;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    padding: 15px 32px; /* Padding */
+    text-align: center; /* Center text */
+    font-size: 16px; /* Font size */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Shadow effect */
+    transition-duration: 0.3s; /* Transition effect on hover */
+    width:100%;
 
 }
 
+
+.checkout-btn:hover {
+    background-color: black;
+    box-shadow: 0 12px 20px rgba(0,0,0,0.4);
+}

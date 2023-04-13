@@ -82,7 +82,7 @@ const BillingPage = () => {
                     <input type="number" name="zip" value={zip} onChange={handleInputChange} maxLength={7}
                            minLength={5} className="ip-style" required/>
                 </label>
-            <button onClick={() => navigate("/Payment")} >Submit</button>
+            <button type="submit" >Submit</button>
 
         </form>
 

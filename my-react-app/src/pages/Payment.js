@@ -15,8 +15,29 @@ export default class PaymentForm extends React.Component {
     handleInputChange = (e) => {
         const {name, value} = e.target;
 
-        this.setState({[name]: value});
+        if (name === 'number' && /\D/.test(value)) {
+            alert('Please enter only numbers');
+            e.target.value = value.replace(/\D/g, '');
+            return;
+        }
+
+        if (name === 'name' && /[^a-zA-Z\s]/.test(value)) {
+
+            alert('Please enter only letters');
+            e.target.value = value.replace(/[^a-zA-Z]/g, '');
+            return;
+        }
+
+        if (name === 'cvc' && /\D/.test(value)) {
+            alert('Please enter only numbers');
+            e.target.value = value.replace(/\D/g, '');
+            return;
+        }
+
+        this.setState({ [name]: value });
     };
+
+
 
     handleSubmit = (e) => {
         e.preventDefault();

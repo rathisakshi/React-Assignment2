@@ -1,5 +1,4 @@
-import React from 'react'
-
+import React from 'react';
 import axios from 'axios';
 import './ContactUS.css';
 const ContactForm = () => {
@@ -8,21 +7,54 @@ const ContactForm = () => {
 
     const onSubmit = (e) => {
         e.preventDefault();
-        setFormStatus('Submitting...');
+        // setFormStatus('Submitting...');
 
         const formData = new FormData(e.target);
-        axios.post('http://localhost/React_Assignment2/my-react-app/php/saveForm.php', formData)
-            .then((response) => {
-                if (response.status === 200) {
-                    setFormStatus('Submitted');
-                } else {
+        // perform validation
+        let valid = true;
+        const email = formData.get('email');
+        const phone = formData.get('phone');
+        const fname = formData.get('fname');
+        const lname = formData.get('lname');
+        const message = formData.get('message');
+        if (!/\S+@\S+\.\S+/.test(email)) {
+            alert('Please enter a valid email address.');
+            valid = false;
+        }
+        else if (!/^\d{10}$/.test(phone)) {
+            alert('Please enter a valid 10-digit phone number.');
+            valid = false;
+        }
+        else if (!/^[A-Za-z]{1,10}(?:['-][A-Za-z]{1,10})*$/.test(fname)) {
+            alert('Please enter a valid first name.');
+            valid = false;
+        }
+        else if (!/^[A-Za-z]{1,10}(?:['-][A-Za-z]{1,10})*$/.test(lname)) {
+            alert('Please enter a valid last name.');
+            valid = false;
+        }
+
+        else if (!/^(.{1,50})?$/.test(message)) {
+            alert('Please enter a message with a maximum of 50 characters.');
+            valid = false;
+        }
+        if (valid) {
+            setFormStatus('Submitting...');
+
+            axios.post('http://localhost/React_Assignment2/my-react-app/php/saveForm.php', formData)
+                .then((response) => {
+                    if (response.status === 200) {
+                        setFormStatus('Submitted');
+                    } else {
+                        setFormStatus('Error');
+                    }
+                })
+                .catch((error) => {
+                    console.error(error);
                     setFormStatus('Error');
-                }
-            })
-            .catch((error) => {
-                console.error(error);
-                setFormStatus('Error');
-            });
+
+                });
+        };
 
 
         axios.post('http://localhost/React_Assignment2/my-react-app/php/sendEmail.php', formData)
@@ -34,6 +66,7 @@ const ContactForm = () => {
             });
 
     };
+
     return (
         <div className="main-contact">
             <h2 className="form-top-heading">We would love to hear from you!</h2>
@@ -82,7 +115,6 @@ const ContactForm = () => {
 
         </div>
 
-    )
-}
-
-export default ContactForm
+    );
+};
+    export default ContactForm;

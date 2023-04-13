@@ -79,7 +79,7 @@ function Cart() {
                     </tr>
                     <tr className="checkout">
                         <td colSpan="2"></td>
-                        <td><button onClick={() => navigate("/CheckoutPage")} > CheckOut</button></td>
+                        <td><button onClick={() => navigate("/CheckoutPage")}  className="checkout-btn"> CheckOut</button></td>
                     </tr>
 
                     </tbody>
