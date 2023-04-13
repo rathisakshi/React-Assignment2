@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d5f8ea8-3392-4f89-9d0f-14fb8ada2977" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +52,7 @@
       <workItem from="1681109171437" duration="17735000" />
       <workItem from="1681186748816" duration="48714000" />
       <workItem from="1681308196855" duration="2506000" />
-      <workItem from="1681360122944" duration="428000" />
+      <workItem from="1681360122944" duration="3161000" />
     </task>
     <servers />
   </component>
@@ -66,7 +64,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/my-react-app/src/pages/CartPage.js</url>
-          <line>77</line>
+          <line>78</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

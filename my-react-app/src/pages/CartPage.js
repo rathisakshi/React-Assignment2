@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import './CartPage.css'
 import { useNavigate } from "react-router-dom";
+
 function Cart() {
     const [cartItems, setCartItems] = useState([]);
 
@@ -40,7 +41,7 @@ function Cart() {
     const total = cartItems.reduce((acc, item) => {
         return acc + subTotal(item);
     }, 0);
-
+    const navigate = useNavigate();
     return (
         <div className="cart-page">
             <h2>Cart</h2>

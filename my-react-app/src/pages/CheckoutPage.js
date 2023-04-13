@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './CheckoutPage.css';
+import {useNavigate} from "react-router-dom";
 const BillingPage = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -49,7 +50,7 @@ const BillingPage = () => {
         alert("Address Added Successfully")
         window.location.href = "payment.js";
     };
-
+    const navigate = useNavigate();
     return (<body className="billing-page">
         <div class ="all">
 
@@ -81,7 +82,7 @@ const BillingPage = () => {
                     <input type="number" name="zip" value={zip} onChange={handleInputChange} maxLength={7}
                            minLength={5} className="ip-style" required/>
                 </label>
-                <button type="submit">Submit</button>
+            <button onClick={() => navigate("/Payment")} >Submit</button>
 
         </form>
 
